@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/row_monitoring">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgtahap"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/baseline_man_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtMonitoring"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desain"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/imgtahap"
+                app:layout_constraintStart_toStartOf="@+id/imgtahap"
+                app:layout_constraintTop_toBottomOf="@+id/imgtahap" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="50dp"
+                android:layout_height="3dp"
+                android:background="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/imgtahap"
+                app:layout_constraintStart_toEndOf="@+id/imgtahap"
+                app:layout_constraintTop_toTopOf="@+id/imgtahap" />
+
+            <TextView
+                android:id="@+id/txtProses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Proses 1"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view1"
+                app:layout_constraintStart_toEndOf="@+id/view1"
+                app:layout_constraintTop_toTopOf="@+id/view1" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="50dp"
+                android:layout_height="3dp"
+                android:background="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/txtProses"
+                app:layout_constraintStart_toEndOf="@+id/txtProses"
+                app:layout_constraintTop_toTopOf="@+id/txtProses" />
+
+            <ImageView
+                android:id="@+id/arrowDown"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/baseline_arrow_downward_24"
+                app:layout_constraintTop_toBottomOf="@+id/txtProses"
+                app:layout_constraintStart_toStartOf="@+id/txtProses"
+                app:layout_constraintEnd_toEndOf="@+id/txtProses"/>
+
+            <ImageView
+                android:id="@+id/see"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/baseline_remove_red_eye_24"
+                app:layout_constraintBottom_toBottomOf="@+id/view2"
+                app:layout_constraintStart_toEndOf="@+id/view2"
+                app:layout_constraintTop_toTopOf="@+id/view2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

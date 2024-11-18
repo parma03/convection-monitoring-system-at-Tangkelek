@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="HOME" />
+    <item
+        android:id="@+id/Monitoring"
+        android:icon="@drawable/baseline_data_exploration_24"
+        android:title="Monitoring" />
+    <item
+        android:id="@+id/Produksi"
+        android:icon="@drawable/baseline_add_home_work_24"
+        android:title="Produksi" />
+</menu>
